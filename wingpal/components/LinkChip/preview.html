@@ -1,0 +1,13 @@
+<!-- @dsCard group="Contenuti" height=132 -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>LinkChip</title></head>
+<body>
+<div id="root" class="ap-row"></div>
+<script>
+  var A = window.WingPal, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null,
+    h(A.LinkChip, { kind: 'event', title: 'Riunione di progetto', meta: 'mer 12 nov · 14:30' }),
+    h(A.LinkChip, { kind: 'note', title: 'Riunione di progetto' }),
+    h(A.LinkChip, { kind: 'task', title: 'Preparare la demo', meta: 'ven · 09:00', onRemove: function () {} })));
+</script>
+</body></html>

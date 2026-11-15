@@ -1,0 +1,14 @@
+<!-- @dsCard group="Contenitori" height=300 -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>EmptyState</title></head>
+<body>
+<div id="root"></div>
+<script>
+  var A = window.Appsolute, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(A.EmptyState, {
+    icon: h(A.CircleCheckIcon, { size: 24 }),
+    title: 'Nessuna attività per oggi',
+    action: h(A.Button, { variant: 'primary' }, 'Aggiungi attività') },
+    'Quello che aggiungi con una scadenza di oggi compare qui.'));
+</script>
+</body></html>

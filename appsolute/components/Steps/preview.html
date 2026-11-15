@@ -1,0 +1,14 @@
+<!-- @dsCard group="Landing" height=364 -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Steps</title><style>body{padding:var(--space-6)}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var A = window.Appsolute, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(A.Steps, { items: [
+    { title: 'Prima versione', text: 'Calendario, attività, note e promemoria sul tuo computer.', state: 'current', status: 'In corso' },
+    { title: 'Più funzioni', text: 'Ricorrenze, importazione da Google e note a blocchi.', status: 'In programma' },
+    { title: 'Sincronizzazione cifrata', text: 'I tuoi dispositivi allineati, sempre senza account.', status: 'In programma' },
+    { title: 'Web e Android', text: 'WingPal nel browser e sui telefoni Android.', status: 'In programma' }] }));
+</script>
+</body></html>

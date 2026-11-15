@@ -1,0 +1,17 @@
+<!-- @dsCard group="Landing" height=372 -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Prose</title><style>body{padding:var(--space-6)}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var A = window.Appsolute, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(A.Prose, { as: 'article' },
+    h('h1', null, 'Informativa sulla privacy'),
+    h('p', null, 'Questo sito non usa cookie, non ha moduli e non traccia chi lo visita.'),
+    h('h2', null, 'Hosting'),
+    h('p', null, 'Il sito è ospitato su GitHub Pages. Come ogni server web, GitHub registra l\'indirizzo IP di chi visita la pagina. ', h('a', { href: '#' }, 'Informativa sulla privacy di GitHub')),
+    h('h2', null, 'Preferenze salvate nel browser'),
+    h('ul', null, h('li', null, 'Il tema chiaro o scuro, nella chiave ', h('code', null, 'wingpal-theme'), '.'), h('li', null, 'Nient\'altro.')),
+    h('p', { className: 'ap-prose-meta' }, 'Ultimo aggiornamento: 13 novembre 2026')));
+</script>
+</body></html>

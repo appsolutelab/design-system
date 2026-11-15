@@ -1,0 +1,16 @@
+<!-- @dsCard group="Landing" height=460 -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Hero</title></head>
+<body>
+<div id="root"></div>
+<script>
+  var A = window.Appsolute, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(A.Hero, {
+    eyebrow: 'appsolute',
+    title: 'App gratuite, aperte e leggere',
+    status: 'WingPal è in sviluppo',
+    lead: 'Siamo sei studenti e costruiamo app che chiunque può usare, leggere e migliorare.',
+    actions: h(React.Fragment, null, h(A.Button, { variant: 'primary', href: '#progetti' }, 'Guarda i progetti'), h(A.Button, { href: '#codice' }, 'Vedi il codice')),
+    note: 'Tutto il codice è pubblico su GitHub' }));
+</script>
+</body></html>

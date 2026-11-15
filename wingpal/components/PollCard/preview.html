@@ -1,0 +1,12 @@
+<!-- @dsCard group="Calendario" height=300 -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>PollCard</title></head>
+<body>
+<div id="root" style="padding: var(--space-4)"></div>
+<script>
+  var A = window.WingPal, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h(A.PollCard, { question: 'Quando facciamo la cena di compleanno di Marco?', meta: 'Proposto da Giulia · chiude venerdì',
+      myVote: 1, options: [{ label: 'Sabato 15 nov', votes: 2 }, { label: 'Domenica 16 nov', votes: 2 }, { label: 'Sabato 22 nov', votes: 1 }] }));
+</script>
+</body></html>

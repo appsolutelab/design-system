@@ -1,0 +1,16 @@
+<!-- @dsCard group="Azioni" height=96 -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Switch</title></head>
+<body>
+<div id="root"></div>
+<script>
+  var A = window.Appsolute, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', { className: 'ap-row' },
+    h(A.Switch, { label: 'Vista', options: [
+      { value: 'grid', name: 'Griglia', content: h(A.CodeIcon, { size: 18 }) },
+      { value: 'list', name: 'Lista', content: h(A.MenuIcon, { size: 18 }) }] }),
+    h(A.Switch, { label: 'Notifiche', defaultValue: 'on', options: [
+      { value: 'off', name: 'Notifiche spente', content: 'NO' },
+      { value: 'on', name: 'Notifiche accese', content: 'SÌ' }] })));
+</script>
+</body></html>

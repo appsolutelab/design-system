@@ -1,0 +1,12 @@
+<!-- @dsCard group="Calendario" height=110 -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>ColorSwatches</title></head>
+<body>
+<div id="root" class="ap-row"></div>
+<script>
+  var A = window.WingPal, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', { style: { display: 'flex', alignItems: 'center', gap: 'var(--space-4)' } },
+    h('span', { style: { font: 'var(--text-body-strong)' } }, 'Colore'),
+    h(A.ColorSwatches, { label: 'Colore dell\'evento', defaultValue: 'sky' })));
+</script>
+</body></html>

@@ -1,0 +1,18 @@
+<!-- @dsCard group="Struttura" height=400 -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>SidebarItem</title><style>body{padding:var(--space-6)}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var A = window.WingPal, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', { style: { width: 248, padding: 'var(--space-4) var(--space-3)', display: 'flex', flexDirection: 'column', gap: 'var(--space-6)', borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-raised)' } },
+    h(A.SidebarGroup, null,
+      h(A.SidebarItem, { label: 'Calendario', icon: h(A.CalendarIcon), active: true }),
+      h(A.SidebarItem, { label: 'Attività', icon: h(A.TaskIcon), count: 3 }),
+      h(A.SidebarItem, { label: 'Note', icon: h(A.NoteIcon) })),
+    h(A.SidebarGroup, { label: 'Etichette', action: h(A.IconButton, { variant: 'ghost', size: 'sm', label: 'Nuova etichetta', icon: h(A.PlusIcon, { size: 16 }) }) },
+      h(A.SidebarItem, { label: 'Scuola', color: 'sky', count: 5 }),
+      h(A.SidebarItem, { label: 'Sport', color: 'coral' }),
+      h(A.SidebarItem, { label: 'Famiglia', color: 'plum' }))));
+</script>
+</body></html>

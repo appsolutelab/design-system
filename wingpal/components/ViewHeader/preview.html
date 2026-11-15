@@ -1,0 +1,13 @@
+<!-- @dsCard group="Struttura" height=150 width=900 -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>ViewHeader</title><style>body{padding:var(--space-6)}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var A = window.WingPal, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null,
+    h(A.ViewHeader, { title: 'Novembre 2026', subtitle: 'Settimana 46', onPrev: function () {}, onNext: function () {}, onToday: function () {},
+      views: [{ value: 'month', label: 'Mese' }, { value: 'week', label: 'Settimana' }, { value: 'day', label: 'Giorno' }], view: 'week',
+      actions: h(A.Button, { variant: 'primary', size: 'sm' }, h(A.PlusIcon, { size: 16 }), 'Nuovo evento') })));
+</script>
+</body></html>

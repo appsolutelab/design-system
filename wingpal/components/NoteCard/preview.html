@@ -1,0 +1,13 @@
+<!-- @dsCard group="Contenuti" height=400 -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>NoteCard</title></head>
+<body>
+<div id="root" class="ap-stack"></div>
+<script>
+  var A = window.WingPal, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null,
+    h(A.NoteCard, { title: 'Riunione di progetto', active: true, excerpt: 'Deciso il calendario delle consegne. Serve una demo per venerdì, la prepara chi ha finito prima.', updated: 'Oggi · 15:10',
+      links: h(React.Fragment, null, h(A.LinkChip, { kind: 'event', title: 'Riunione di progetto', meta: '14:30' }), h(A.LinkChip, { kind: 'task', title: 'Preparare la demo' })) }),
+    h(A.NoteCard, { title: 'Idee per la tesina', excerpt: 'Storia dei calendari: dal giuliano al gregoriano, e perché ottobre 1582 ha dieci giorni in meno.', updated: 'Ieri · 21:40' })));
+</script>
+</body></html>

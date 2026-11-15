@@ -1,0 +1,13 @@
+<!-- @dsCard group="Input" height=236 -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Checkbox</title></head>
+<body>
+<div id="root" class="ap-stack"></div>
+<script>
+  var A = window.Appsolute, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null,
+    h(A.Checkbox, { label: 'Avvia WingPal all\'accensione del computer', defaultChecked: true }),
+    h(A.Checkbox, { label: 'Mostra i numeri delle settimane', hint: 'Nella vista mese, accanto a ogni riga.' }),
+    h(A.Checkbox, { label: 'Sincronizza tra dispositivi', hint: 'Arriva dopo la prima versione.', disabled: true })));
+</script>
+</body></html>

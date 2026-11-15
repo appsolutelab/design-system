@@ -1,0 +1,15 @@
+<!-- @dsCard group="Azioni" height=88 -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>IconButton</title></head>
+<body>
+<div id="root"></div>
+<script>
+  var A = window.Appsolute, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', { className: 'ap-row' },
+    h(A.IconButton, { label: 'Apri il menu', icon: h(A.MenuIcon) }),
+    h(A.IconButton, { label: 'Copia', icon: h(A.CopyIcon) }),
+    h(A.IconButton, { variant: 'primary', label: 'Vedi il codice', icon: h(A.CodeIcon) }),
+    h(A.IconButton, { variant: 'ghost', label: 'Passa al tema scuro', icon: h(A.MoonIcon) }),
+    h(A.IconButton, { size: 'sm', label: 'Chiudi', icon: h(A.CloseIcon) })));
+</script>
+</body></html>

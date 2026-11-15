@@ -1,0 +1,13 @@
+<!-- @dsCard group="Contenitori" height=200 -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Card</title></head>
+<body>
+<div id="root" class="ap-row"></div>
+<script>
+  var A = window.Appsolute, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null,
+    h(A.Card, { as: 'section', title: 'Da fare oggi', actions: h(A.Badge, null, '3'), style: { flex: '1 1 240px' } }, h('p', { style: { margin: 0, color: 'var(--ink-muted)' } }, 'In rilievo: il contenitore normale di app e landing.')),
+    h(A.Card, { tone: 'sunken', padding: 'md', style: { flex: '1 1 200px' } }, h('p', { style: { margin: 0, color: 'var(--ink-muted)' } }, 'Scavata: contenuti secondari, aree dove si scrive.')),
+    h(A.Card, { tone: 'floating', padding: 'md', style: { flex: '1 1 200px' } }, h('p', { style: { margin: 0, color: 'var(--ink-muted)' } }, 'Galleggia: menu e popover sopra la vista.'))));
+</script>
+</body></html>

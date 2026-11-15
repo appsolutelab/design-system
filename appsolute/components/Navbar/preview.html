@@ -1,0 +1,13 @@
+<!-- @dsCard group="Landing" height=240 -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Navbar</title></head>
+<body>
+<div id="root"></div>
+<script>
+  var A = window.Appsolute, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
+    h(A.Navbar, { sticky: false, brand: 'appsolute', current: '#progetti',
+      links: [{ label: 'Progetti', href: '#progetti' }, { label: 'Chi siamo', href: '#chi-siamo' }, { label: 'Codice', href: '#codice' }],
+      actions: h(React.Fragment, null, h(A.LangSwitch, null), h(A.ThemeToggle, null), h(A.Button, { variant: 'primary', size: 'sm', href: '#contatti' }, 'Contattaci')) })));
+</script>
+</body></html>

@@ -1,0 +1,20 @@
+<!-- @dsCard group="Calendario" height=700 width=960 -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>MonthGrid</title><style>body{padding:var(--space-4)}#root{height:668px}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var A = window.WingPal, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(A.MonthGrid, { year: 2026, month: 10, today: '2026-11-14', selected: '2026-11-12', events: [
+      { id: 'e1', date: '2026-11-03', title: 'Verifica di matematica', start: '09:00', end: '10:00', color: 'sky' },
+      { id: 'e2', date: '2026-11-10', title: 'Allenamento', start: '17:00', end: '18:30', color: 'coral' },
+      { id: 'e3', date: '2026-11-12', title: 'Riunione di progetto', start: '14:30', end: '16:00', place: 'Aula 12', color: 'sky' },
+      { id: 'e4', date: '2026-11-12', title: 'Allenamento', start: '17:00', end: '18:30', color: 'coral' },
+      { id: 'e5', date: '2026-11-14', title: 'Colloquio di TPSIT', start: '10:00', end: '11:00', color: 'sky' },
+      { id: 'e6', date: '2026-11-14', title: 'Pranzo dai nonni', start: '13:00', end: '14:30', color: 'plum' },
+      { id: 'e7', date: '2026-11-14', title: 'Demo di WingPal', start: '15:30', end: '16:30', color: 'graphite' },
+      { id: 'e8', date: '2026-11-14', title: 'Cinema', start: '21:00', color: 'moss' },
+      { id: 'e9', date: '2026-11-21', title: 'Partita', start: '15:00', end: '17:00', color: 'coral' },
+      { id: 'e10', date: '2026-11-27', title: 'Consegna relazione', color: 'sky' }] }));
+</script>
+</body></html>

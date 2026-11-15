@@ -1,0 +1,14 @@
+<!-- @dsCard group="Calendario" height=260 -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>EventBlock</title></head>
+<body>
+<div id="root" class="ap-stack"></div>
+<script>
+  var A = window.WingPal, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null,
+    h(A.EventBlock, { title: 'Verifica di matematica', time: '08:00–09:00', place: 'Aula 3B', color: 'sky', height: 48 }),
+    h(A.EventBlock, { title: 'Allenamento calcetto', time: '17:30–19:00', color: 'coral', height: 72 }),
+    h(A.EventBlock, { title: 'Cena dai nonni', time: '20:00', color: 'plum', compact: true }),
+    h(A.EventBlock, { title: 'Riunione appsolute', time: '15:00', color: 'graphite', compact: true })));
+</script>
+</body></html>

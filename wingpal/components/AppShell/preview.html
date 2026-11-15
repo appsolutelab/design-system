@@ -1,0 +1,35 @@
+<!-- @dsCard group="Struttura" height=660 width=1100 -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>AppShell</title></head>
+<body>
+<div id="root"></div>
+<script>
+  var A = window.WingPal, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', { style: { height: 660 } }, h(A.AppShell, {
+    sidebar: h(React.Fragment, null,
+      h('div', { style: { display: 'flex', alignItems: 'center', gap: 'var(--space-2)', padding: '0 var(--space-3)', font: 'var(--text-heading)', fontWeight: 700 } },
+        h('span', { 'aria-hidden': true, style: { width: 28, height: 28, background: 'var(--ink)', WebkitMask: 'url(/_blob/c06303eace7ddf6d536f51850e5df137) center / contain no-repeat', mask: 'url(/_blob/c06303eace7ddf6d536f51850e5df137) center / contain no-repeat' } }), 'WingPal'),
+      h(A.SidebarGroup, null,
+        h(A.SidebarItem, { label: 'Calendario', icon: h(A.CalendarIcon), active: true }),
+        h(A.SidebarItem, { label: 'Attività', icon: h(A.TaskIcon), count: 3 }),
+        h(A.SidebarItem, { label: 'Note', icon: h(A.NoteIcon) })),
+      h(A.SidebarGroup, { label: 'Etichette' },
+        h(A.SidebarItem, { label: 'Scuola', color: 'sky' }),
+        h(A.SidebarItem, { label: 'Sport', color: 'coral' }),
+        h(A.SidebarItem, { label: 'Famiglia', color: 'plum' }))),
+    header: h(A.ViewHeader, { title: 'Novembre 2026', onPrev: function () {}, onNext: function () {}, onToday: function () {},
+      views: [{ value: 'month', label: 'Mese' }, { value: 'week', label: 'Settimana' }, { value: 'day', label: 'Giorno' }], view: 'month',
+      actions: h(A.Button, { variant: 'primary', size: 'sm' }, h(A.PlusIcon, { size: 16 }), 'Nuovo evento') }) },
+    h(A.MonthGrid, { year: 2026, month: 10, today: '2026-11-14', selected: '2026-11-12', events: [
+      { id: 'e1', date: '2026-11-03', title: 'Verifica di matematica', start: '09:00', end: '10:00', color: 'sky' },
+      { id: 'e2', date: '2026-11-10', title: 'Allenamento', start: '17:00', end: '18:30', color: 'coral' },
+      { id: 'e3', date: '2026-11-12', title: 'Riunione di progetto', start: '14:30', end: '16:00', place: 'Aula 12', color: 'sky' },
+      { id: 'e4', date: '2026-11-12', title: 'Allenamento', start: '17:00', end: '18:30', color: 'coral' },
+      { id: 'e5', date: '2026-11-14', title: 'Colloquio di TPSIT', start: '10:00', end: '11:00', color: 'sky' },
+      { id: 'e6', date: '2026-11-14', title: 'Pranzo dai nonni', start: '13:00', end: '14:30', color: 'plum' },
+      { id: 'e7', date: '2026-11-14', title: 'Demo di WingPal', start: '15:30', end: '16:30', color: 'graphite' },
+      { id: 'e8', date: '2026-11-14', title: 'Cinema', start: '21:00', color: 'moss' },
+      { id: 'e9', date: '2026-11-21', title: 'Partita', start: '15:00', end: '17:00', color: 'coral' },
+      { id: 'e10', date: '2026-11-27', title: 'Consegna relazione', color: 'sky' }] }))));
+</script>
+</body></html>

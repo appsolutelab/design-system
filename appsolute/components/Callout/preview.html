@@ -1,0 +1,13 @@
+<!-- @dsCard group="Contenitori" height=344 -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Callout</title><style>.ap-stack{max-width:640px}</style></head>
+<body>
+<div id="root" class="ap-stack"></div>
+<script>
+  var A = window.Appsolute, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null,
+    h(A.Callout, { title: 'WingPal è in sviluppo', action: h(A.Button, { size: 'sm', href: '#roadmap' }, 'Vedi la roadmap') }, 'La prima versione è prevista per gennaio 2027.'),
+    h(A.Callout, { tone: 'success', title: 'Copia di sicurezza creata' }, 'Trovi il file wingpal-2026-11-14.zip nella cartella Documenti.'),
+    h(A.Callout, { tone: 'danger', title: 'Non riesco a salvare la nota' }, 'Il disco è pieno. Libera un po\' di spazio e riprova: il testo resta qui finché non chiudi.')));
+</script>
+</body></html>

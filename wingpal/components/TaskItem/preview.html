@@ -1,0 +1,14 @@
+<!-- @dsCard group="Contenuti" height=376 -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>TaskItem</title></head>
+<body>
+<div id="root" class="ap-stack"></div>
+<script>
+  var A = window.WingPal, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null,
+    h(A.TaskItem, { title: 'Preparare la demo', due: 'Venerdì · 09:00', tag: 'Scuola', tagColor: 'sky', onOpen: function () {},
+      links: h(A.LinkChip, { kind: 'note', title: 'Riunione di progetto' }) }),
+    h(A.TaskItem, { title: 'Consegnare la relazione di TPSIT', due: 'Ieri · 23:59', late: true, tag: 'Scuola', tagColor: 'sky' }),
+    h(A.TaskItem, { title: 'Comprare le scarpe da calcetto', done: true, tag: 'Sport', tagColor: 'coral' })));
+</script>
+</body></html>

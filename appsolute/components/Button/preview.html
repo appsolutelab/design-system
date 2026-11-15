@@ -1,0 +1,16 @@
+<!-- @dsCard group="Azioni" height=88 -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Button</title></head>
+<body>
+<div id="root" class="ap-row"></div>
+<script>
+  var A = window.Appsolute, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(React.Fragment, null,
+    h(A.Button, { variant: 'primary' }, 'Aggiungi evento'),
+    h(A.Button, null, 'Annulla'),
+    h(A.Button, { variant: 'ghost' }, 'Oggi'),
+    h(A.Button, { variant: 'danger' }, 'Elimina nota'),
+    h(A.Button, { variant: 'primary', size: 'sm' }, 'Salva'),
+    h(A.Button, { disabled: true }, 'Non disponibile')));
+</script>
+</body></html>

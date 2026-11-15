@@ -1,0 +1,31 @@
+/* Appsolute UI — importa questo file una volta sola (es. in main.tsx). */
+@import "../../tokens.css"; /* nel design system tokens.css è in project/ */
+@import "./base.css";
+@import "./components/Button/Button.css";
+@import "./components/IconButton/IconButton.css";
+@import "./components/TextField/TextField.css";
+@import "./components/Switch/Switch.css";
+@import "./components/Navbar/Navbar.css";
+@import "./components/Hero/Hero.css";
+@import "./components/Section/Section.css";
+@import "./components/FeatureCard/FeatureCard.css";
+@import "./components/CodeBlock/CodeBlock.css";
+@import "./components/RepoCard/RepoCard.css";
+@import "./components/Footer/Footer.css";
+@import "./components/Badge/Badge.css";
+@import "./components/Card/Card.css";
+@import "./components/Checkbox/Checkbox.css";
+@import "./components/Segmented/Segmented.css";
+@import "./components/Kbd/Kbd.css";
+@import "./components/Callout/Callout.css";
+@import "./components/EmptyState/EmptyState.css";
+@import "./components/Dialog/Dialog.css";
+@import "./components/DownloadCard/DownloadCard.css";
+@import "./components/Steps/Steps.css";
+@import "./components/ProjectCard/ProjectCard.css";
+@import "./components/TeamCard/TeamCard.css";
+@import "./components/Faq/Faq.css";
+@import "./components/Prose/Prose.css";
+@import "./components/WindowFrame/WindowFrame.css";
+@import "./reduced-motion.css";
+@import "./forced-colors.css";

@@ -1,0 +1,20 @@
+/* WingPal UI — importa questo file una volta sola (es. in main.tsx). */
+@import "../../tokens.css"; /* nel design system tokens.css è in project/ */
+@import "./base.css";
+@import "./components/Tag/Tag.css";
+@import "./components/TaskItem/TaskItem.css";
+@import "./components/EventBlock/EventBlock.css";
+@import "./components/PollCard/PollCard.css";
+@import "./components/AppShell/AppShell.css";
+@import "./components/SidebarItem/SidebarItem.css";
+@import "./components/ViewHeader/ViewHeader.css";
+@import "./components/MonthGrid/MonthGrid.css";
+@import "./components/DayGrid/DayGrid.css";
+@import "./components/QuickAdd/QuickAdd.css";
+@import "./components/NoteCard/NoteCard.css";
+@import "./components/LinkChip/LinkChip.css";
+@import "./components/Reminder/Reminder.css";
+@import "./components/ColorSwatches/ColorSwatches.css";
+@import "./components/SettingsRow/SettingsRow.css";
+@import "./reduced-motion.css";
+@import "./forced-colors.css";

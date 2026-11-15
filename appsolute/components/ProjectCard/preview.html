@@ -1,0 +1,12 @@
+<!-- @dsCard group="Landing" height=284 -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>ProjectCard</title><style>body{padding:var(--space-6)}#root{max-width:380px}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var A = window.Appsolute, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(A.ProjectCard, { name: 'WingPal', href: '#', status: 'In sviluppo',
+    description: 'Calendario, note e attività in un posto solo. Funziona sul tuo computer, senza account.',
+    meta: ['Desktop', 'Open source'], linkLabel: 'Vai a WingPal' }));
+</script>
+</body></html>

@@ -1,0 +1,13 @@
+<!-- @dsCard group="Landing" height=330 -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>WindowFrame</title><style>body{padding:var(--space-8)}#root{max-width:560px;margin:0 auto}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var A = window.Appsolute, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(A.WindowFrame, { title: 'WingPal', label: 'Anteprima di WingPal' },
+    h('div', { style: { display: 'grid', gap: 'var(--space-3)' } },
+      h(A.Callout, { title: 'Qui dentro va l\'app' }, 'Uno screenshot, oppure i componenti veri di WingPal: restano vivi e seguono il tema.'),
+      h('div', { style: { display: 'flex', gap: 'var(--space-3)' } }, h(A.Button, { variant: 'primary', size: 'sm' }, 'Nuovo evento'), h(A.Button, { size: 'sm' }, 'Oggi')))));
+</script>
+</body></html>

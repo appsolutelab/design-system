@@ -1,0 +1,13 @@
+<!-- @dsCard group="Landing" height=420 -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Section</title></head>
+<body>
+<div id="root"></div>
+<script>
+  var A = window.Appsolute, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(A.Section, { id: 'regole', eyebrow: 'Come lavoriamo', title: 'Tre regole per ogni progetto', lead: 'Valgono per tutte le app di appsolute.', grid: true },
+    h(A.FeatureCard, { title: 'Gratis' }, 'Niente abbonamenti e niente pubblicità.'),
+    h(A.FeatureCard, { title: 'Open source' }, 'Il codice è pubblico: puoi leggerlo e proporre modifiche.'),
+    h(A.FeatureCard, { title: 'Leggere' }, 'Si aprono in fretta anche su computer vecchi.')));
+</script>
+</body></html>

@@ -1,0 +1,16 @@
+<!-- @dsCard group="Landing" height=470 -->
+<!doctype html>
+<html><head><meta charset="utf-8"><title>DownloadCard</title><style>body{padding:var(--space-6)}#root{max-width:520px}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var A = window.Appsolute, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h(A.DownloadCard, {
+    title: 'Scarica WingPal', version: 'v0.1.0', date: '24 gen 2027', platform: 'windows',
+    options: [
+      { platform: 'windows', href: '#', file: 'WingPal_0.1.0_x64-setup.exe', size: '8,4 MB', note: 'Windows 10 o successivo' },
+      { platform: 'macos', href: '#', file: 'WingPal_0.1.0_universal.dmg', size: '12,1 MB', note: 'macOS 12 o successivo' },
+      { platform: 'linux', href: '#', file: 'WingPal_0.1.0_amd64.AppImage', size: '78 MB', note: 'AppImage, 64 bit' }],
+    footer: h(React.Fragment, null, h('a', { href: '#' }, 'Note di versione'), h('a', { href: '#' }, 'Checksum SHA-256'), h('span', null, 'Gratis, senza account')) }));
+</script>
+</body></html>
